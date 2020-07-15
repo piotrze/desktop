@@ -11,3 +11,5 @@ sudo systemctl enable docker.service \
 && chsh -s /usr/bin/fish \
 && sudo systemctl disable bluetooth \
 && sudo cp data/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo cp data/capsiddle.service /etc/systemd/system/capsiddle.service
+sudo systemctl enable capsiddle
