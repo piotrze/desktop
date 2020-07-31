@@ -1,0 +1,8 @@
+Option "XkbOptions" "caps:escape"
+#!/bin/sh
+
+# caps-to-escape - systemd suspend/resume hook
+#
+case $1 in
+    post) setxkbmap -option -option caps:escape ;;
+esac
