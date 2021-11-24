@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-PACKAGES="docker docker-compose vim emacs tilix nodejs-lts-erbium npm ripgrep ruby ruby-irb aws-cli chromium git-crypt fish"
-AUR_PACKAGES="zoom"
+PACKAGES="docker docker-compose vim emacs tilix nodejs-lts-fermium npm ripgrep ruby ruby-irb aws-cli chromium git-crypt fish ksnip gimp dnsutils redshift vlc transmission-gtk"
+AUR_PACKAGES="zoom autojump loophole"
 
 sudo pacman -S --needed ${PACKAGES}
 sudo pamac install ${AUR_PACKAGES}
